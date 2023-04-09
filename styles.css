@@ -1,0 +1,201 @@
+body{
+    background-image:url('pxfuel (4).jpg') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    cursor: url("mg.svg"), auto;
+}
+@font-face {
+    font-family: 'hab';
+    src: url(hab.ttf);
+}
+@font-face {
+    font-family: 'ccc';
+    src: url(ccc.ttf);
+}
+.navg{
+align-self: center;
+border: 10px;
+}
+.log{
+    padding-bottom: 13px;
+}
+.title{
+    padding: 20px;
+font-size: 25px;
+color: white;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    nav{
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.321);
+    width:100%;
+    display: flex;
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+box-shadow: 0px 25px 20px -20px rgb(36, 36, 36);
+
+}
+nav ul{
+    color: white;
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.but{
+    text-decoration: none;
+    color: white;
+}
+li{
+    padding-right: 40px;
+    padding-left: 40px;
+    position: relative;
+    z-index: 2;
+    transition: color 0.2s;
+    
+}
+nav ul li::after{
+    content:'';
+    background: #a16cac;
+    width: 80%;
+    height: 190%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s ;
+}
+nav ul li:hover{
+    color:black;
+
+}
+nav ul li:hover::after{
+    top:50%;
+    opacity: 1;
+}
+section h2{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding-top: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section p{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.pics{
+    padding:50px;
+    background-color: #ff1ea12a;
+
+}
+.about-us{
+    font-family: 'hab',sans-serif;
+}
+.intro{
+padding-bottom: 60px;
+padding-top: 30px;
+}
+.hh{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+::-webkit-scrollbar{
+    width:20px;
+}
+::-webkit-scrollbar-track{
+    background: #380336f6;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(rgb(255, 0, 149),rgb(102, 0, 255));
+    border-radius: 100vw;
+    border: 0.1em solid #9859a5e4;
+}
+.s1{
+padding-top: 40px;
+padding-bottom: 90px;
+}
+.login{
+font-size: 30px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+color:hsl(317 100% 54%);
+display: inline-block;
+cursor: pointer;
+text-decoration:none;
+border:4px solid hsl(317 100% 54%);
+padding:10px 30px;
+border-radius: 10px;
+text-shadow:0 0 0.1em hsla(0, 0%, 100%, 0.358),  0 0 0.2em hsl(317 100% 54%);
+box-shadow: inset 0 0 0.5em hsl(317 100% 54%),0 0 0.5em hsl(317 100% 54%);
+position: relative;
+transition: background-color 50ms linear;
+}
+.login::before{
+    pointer-events: none;
+    content:'';
+    position:absolute;
+    background: hsl(317 100% 54%);
+    top:115%;
+    left:0;
+    width:100%;
+    height:100%;
+    transform:perspective(1em) rotatex(40deg) scale(1,0.35);
+    filter: blur(1.2em);
+    opacity:0.7;
+
+}
+.login::after{
+    content:'';
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em hsl(317 100% 54%);
+opacity: 0;
+transition: opacity 50ms linear;
+}
+.login:hover,.login:focus{
+    background:hsl(317 100% 54%) ;
+    color:rgb(61, 15, 55);
+    text-shadow: none;
+}
+.login:hover::after{
+opacity: 1;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0.2;
+        transform: scale(108%)
+    }
+    to{
+        opacity: 1;
+        transform: scale(100%)
+    }
+}
+body{
+    animation: transitionIn 3s;
+}
+.footer {
+    
+    left: 10px;
+    bottom: 5px;
+    right: 10px; 
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.315);
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
